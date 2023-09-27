@@ -4,7 +4,7 @@ logerror() { echo "[ERROR] $@" 1>&2; }
 
 python3 src/init_gitbook.py versions
 python3 src/script.py "home" "book"
-rm -rf node_modules/gitbook-plugin-tbfed-pagefooter
+# rm -rf node_modules/gitbook-plugin-tbfed-pagefooter
 gitbook install
 python3 src/script.py "home" "powered"
 python3 src/script.py "home" "gitalk"
